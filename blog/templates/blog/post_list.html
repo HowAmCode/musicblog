@@ -1,0 +1,61 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <title>Win Music</title>
+    </head>
+    <body>
+        <div class="mainhead">
+		<header>
+            <h1>Win Music</h1>
+		</header>
+        </div>
+		
+		{% if features %}
+			<div class="featurehead">
+				<h1>Featured</h1>
+			</div>
+		{% endif %}
+		
+		{% for feature in features %}
+			<div class="featured">
+				<h1><a href= {{ feature.contestlink }}>{{ feature.title }}</a></h1>
+				<!-- <p>{{ feature.text|linebreaksbr }}</p> mehbehh tomorrrrro -->
+				<ul>
+					<li><b>Hosted By: </b> {{ feature.host }} </li>
+					<li><b>Artists: </b> {{ feature.artist }} </li>
+					<li><b>Venue: </b> {{ feature.venue }} </li>
+					<li><b>Event Date: </b> {{ feature.concertday }} </li>
+					<li><b>Ages: </b> {{ feature.ages }} </li>
+					<li><b>Entry Method: </b> {{ feature.entrymethod }} </li>
+					<li><b>Expires: </b>{{ feature.expires }}</li>
+				</ul>
+			</div>
+		{% endfor %}
+		
+		{% if posts %}
+			<div class="contesthead">
+				<h1>Contests</h1>
+			</div>
+		{% endif %}
+		
+        {% for post in posts %}
+			{% if post.featured == 0 %}
+				<div class="blogpost">
+					<h1><a href= {{ post.contestlink }}>{{ post.title }}</a></h1>
+					<!-- <p>{{ feature.text|linebreaksbr }}</p> mehbehh tomorrrrro -->
+					<ul>
+						<li><b>Hosted By: </b> {{ post.host }} </li>
+						<li><b>Artists: </b> {{ post.artist }} </li>
+						<li><b>Venue: </b> {{ post.venue }} </li>
+						<li><b>Event Date: </b> {{ post.concertday }} </li>
+						<li><b>Ages: </b> {{ post.ages }} </li>
+						<li><b>Entry Method: </b> {{ post.entrymethod }} </li>
+						<li><b>Expires: </b>{{ post.expires }}</li>
+					</ul>
+				</div>
+			{% endif %}
+		{% endfor %}
+    </body>
+</html>
