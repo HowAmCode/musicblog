@@ -41,6 +41,9 @@
 	background-color: #FF5252; /* F73C3C */
 	margin-bottom: 7px;
 	border: 2px solid #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -120,23 +123,23 @@ body {
 
 @media only screen and (max-device-width: 740px) {
 	h2{
-		font-size:200%;
+		font-size:220%;
 	}
 	
 	body {
-		font-size:120%;
+		font-size:150%;
 	}
 	
 	.mainhead{
-		font-size: 100%;
+		font-size: 180%;
 	}
 	
 	.featurehead{
-		font-size: 100%;
+		font-size: 150%;
 	}
 	
 	.contesthead{
-		font-size: 100%;
+		font-size: 150%;
 	}
 	
 	
