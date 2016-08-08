@@ -14,13 +14,15 @@
 		
 		{% if features %}
 			<div class="featurehead">
-				<h1>Featured</h1>
+				<div class="headchild">
+					<h1>Featured</h1>
+				</div>
 			</div>
 		{% endif %}
 		
 		{% for feature in features %}
 			<div class="featured">
-				<h1><a href= {{ feature.contestlink }}>{{ feature.title }}</a></h1>
+				<h2><a href= {{ feature.contestlink }}>{{ feature.title }}</a></h2>
 				<!-- <p>{{ feature.text|linebreaksbr }}</p> mehbehh tomorrrrro -->
 				<ul>
 					<li><b>Hosted By: </b> {{ feature.host }} </li>
@@ -36,14 +38,16 @@
 		
 		{% if posts %}
 			<div class="contesthead">
-				<h1>Contests</h1>
+				<div class="headchild">
+					<h1>Contests</h1>
+				</div>
 			</div>
 		{% endif %}
 		
         {% for post in posts %}
 			{% if post.featured == 0 %}
 				<div class="blogpost">
-					<h1><a href= {{ post.contestlink }}>{{ post.title }}</a></h1>
+					<h2><a href= {{ post.contestlink }}>{{ post.title }}</a></h2>
 					<!-- <p>{{ feature.text|linebreaksbr }}</p> mehbehh tomorrrrro -->
 					<ul>
 						<li><b>Hosted By: </b> {{ post.host }} </li>

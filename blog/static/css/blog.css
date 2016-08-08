@@ -16,22 +16,26 @@
 }
 
 .contesthead {
-	vertical-align:middle;
-	line-height:0px;
+	position: relative;
+	line-height:100px;
 	width: 60%;
-	height:30px;
+	height:5%;
 	padding:5px;
     text-align: center;
 	background-color: #6697FA; /* 346BD9 */
 	margin-bottom: 7px;
 	border: 2px solid #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .featurehead {
+	position: relative;
 	vertical-align:middle;
 	line-height:0px;
 	width: 60%;
-	height:30px;
+	height:5%;
 	padding:5px;
     text-align: center;
 	background-color: #FF5252; /* F73C3C */
@@ -43,7 +47,7 @@
 .blogpost{
 	background-color: #AEC8FF; /* B5CCFF */
 	border: 2px solid #000000;
-	padding: 5px;
+	padding:0px 5px 5px 5px;
 	text-align: center;
 	margin-bottom: 7px;
 	width: 60%;
@@ -77,7 +81,7 @@
 .featured {
 	background-color: #FA9797;
 	border: 2px solid #000000;
-	padding: 5px;
+	padding:0px 5px 5px 5px;
 	text-align: center;
 	margin-bottom: 7px;
 	width: 60%;
@@ -110,6 +114,6 @@
 body {
 	background: #DEECE3;
 	font-family: Verdan, Tahoma, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	overflow: auto;
 }
