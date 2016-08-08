@@ -117,3 +117,27 @@ body {
 	font-size: 16px;
 	overflow: auto;
 }
+
+@media only screen and (max-device-width: 740px) {
+	h2{
+		font-size:200%;
+	}
+	
+	body {
+		font-size:120%;
+	}
+	
+	.mainhead{
+		font-size: 100%;
+	}
+	
+	.featurehead{
+		font-size: 100%;
+	}
+	
+	.contesthead{
+		font-size: 100%;
+	}
+	
+	
+}
