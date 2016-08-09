@@ -10,16 +10,15 @@
 }
 
 .mainhead > * {
-    padding: 5px;
+    padding: 0px;
     -webkit-flex: 1 100%;
     flex: 1 100%;
 }
 
 .contesthead {
 	position: relative;
-	line-height:100px;
 	width: 60%;
-	height:5%;
+	height:4%;
 	padding:5px;
     text-align: center;
 	background-color: #6697FA; /* 346BD9 */
@@ -35,7 +34,7 @@
 	vertical-align:middle;
 	line-height:0px;
 	width: 60%;
-	height:5%;
+	height:4%;
 	padding:5px;
     text-align: center;
 	background-color: #FF5252; /* F73C3C */
@@ -121,9 +120,11 @@ body {
 	overflow: auto;
 }
 
-@media only screen and (max-device-width: 740px) {
+
+
+@media only screen and (max-device-height: 420px) {
 	h2{
-		font-size:200%;
+		font-size:150%;
 	}
 	
 	body {
@@ -131,16 +132,38 @@ body {
 	}
 	
 	.mainhead{
-		font-size: 130%;
+		font-size: 400%;
+	}
+	
+	.featurehead h1{
+		font-size: 100%;
+	}
+	
+	.contesthead h1{
+		font-size: 100%;
+	}
+	
+	
+}
+
+@media only screen and (max-device-width: 720px) {
+	h2{
+		font-size:150%;
+	}
+	
+	body {
+		font-size:150%;
+	}
+	
+	.mainhead{
+		font-size: 150%;
 	}
 	
 	.featurehead{
-		font-size: 130%;
+		font-size: 100%;
 	}
 	
 	.contesthead{
-		font-size: 130%;
+		font-size: 100%;
 	}
-	
-	
 }
