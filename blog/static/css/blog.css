@@ -132,7 +132,7 @@ body {
 	}
 	
 	.mainhead{
-		font-size: 400%;
+		font-size: 150%;
 	}
 	
 	.featurehead h1{
@@ -146,9 +146,9 @@ body {
 	
 }
 
-@media only screen and (max-device-width: 720px) {
+@media only screen and (max-device-width: 420px) {
 	h2{
-		font-size:150%;
+		font-size:160%;
 	}
 	
 	body {

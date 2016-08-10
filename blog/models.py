@@ -27,7 +27,7 @@ FEATURE_CHOICE = (
 )
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User', default='randy')
     title = models.CharField(max_length=200)
     contestlink = models.CharField(max_length=500, default='')
     host = models.CharField(max_length=200, default='')
@@ -36,7 +36,7 @@ class Post(models.Model):
     featured = models.IntegerField(choices=FEATURE_CHOICE, default=0)
     genre = models.CharField(max_length=100,choices=GENRE, default='Rock')
     venue = models.CharField(max_length=200)
-    city = models.CharField(max_length=200, default='')
+    city = models.CharField(max_length=200, default='Toronto')
     ages = models.CharField(max_length=200, choices=AGES, default="All Ages")
     entrymethod = models.CharField(max_length=200, default='')
     concertday = models.DateField(default=timezone.now)

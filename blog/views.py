@@ -3,7 +3,7 @@ from django.utils import timezone
 from .models import Post
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).filter(featured=0).order_by('-published_date')
+    posts = Post.objects.filter(expires__gte=timezone.now()).filter(published_date__lte=timezone.now()).filter(featured=0).order_by('-published_date')
 	
     features = Post.objects.filter(published_date__lte=timezone.now()).filter(featured=1).order_by('-published_date')	
 	
