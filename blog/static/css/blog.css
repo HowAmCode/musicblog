@@ -40,7 +40,7 @@
 	font-size: 35px;
 	margin-bottom: 0;
 	padding-bottom:0;
-	margin-top:10px;
+	margin-top:20px;
 }
 
 
@@ -194,5 +194,13 @@ body {
 	
 	.contesthead{
 		font-size: 100%;
+	}
+	
+	.headtitle{
+		font-size:150%;
+	}
+	
+	.subtitle{
+		font-size:100%;
 	}
 }
