@@ -15,6 +15,10 @@
     flex: 1 100%;
 }
 
+.headlink {color: #000000; text-decoration: none;}
+.headlink visited{color: #000000; text-decoration: none;}
+.headlink hover{cursor:hand;}
+
 .aboutus {
 	background-color: #FAD396; /* B5CCFF */
 	border: 2px solid #000000;
@@ -73,6 +77,20 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.cityhead {
+	background-color: #37E3E9; /* B5CCFF */
+	border: 2px solid #000000;
+	padding:0px 5px 5px 5px;
+	text-align: center;
+	margin-bottom: 7px;
+	width: 60%;
+	text-decoration:none;
+}
+
+.cityhead a{color: #000000; text-decoration: none;}
+.cityhead a:visited{color: #000000; text-decoration: none;}
+.cityhead a:hover{cursor:hand;}
 
 
 .blogpost{

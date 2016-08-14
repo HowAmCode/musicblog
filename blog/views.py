@@ -22,4 +22,7 @@ def post_list_toronto(request):
 def about_us(request):
 	return render(request, 'blog/about_us.html', {})
 	
+def home_page(request):
+    return render(request, 'blog/home_page.html', {})
+	
 
