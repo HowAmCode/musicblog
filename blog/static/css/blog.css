@@ -35,14 +35,16 @@
 
 
 .subtitle{
-	margin-top:0;
+	margin-top:0px;
 	padding-top:0;
 	font-size: 18px;
+	font-weight:normal;
+	margin-bottom:18px;;
 }
 
 .headtitle{
 	font-size: 35px;
-	margin-bottom: 0;
+	margin-bottom: 0px;
 	padding-bottom:0;
 	margin-top:20px;
 }
