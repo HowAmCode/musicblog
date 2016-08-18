@@ -24,6 +24,3 @@ def about_us(request):
 	
 def home_page(request):
     return render(request, 'blog/home_page.html', {})
-	
-def handler404(request):
-	return render(request, 'blog/404.html', {})

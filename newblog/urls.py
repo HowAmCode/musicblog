@@ -22,5 +22,3 @@ urlpatterns = [
 	url(r'^toronto/', include('blog.urls')),
 	url(r'^about/', include('blog.urls')),
 ]
-
-handler404 = 'blog.views.handler404'
